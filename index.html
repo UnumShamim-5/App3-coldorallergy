@@ -38,9 +38,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <script>
         var allergy_count = 0;
         var cold_count = 0;
-	var total_count= cold_count + allergy_count 
- 
-
+	var total_count = cold_count + allergy_count 
+ 	var allergyPercent = allergy_count/total_count
+	var coldPercent = cold_count/total_count
+	
         function allergyAdd(){
             allergy_count = allergy_count + 1;
 		alert(allergy_count);
@@ -152,6 +153,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<!-- did something but not the right thing- going to add it between the {} for each function- gonna do it for both and see if it works -->
 		<!-- deleted a space- might not do anything but worth a try--> 
 		<!-- added total count variable, deleted code preciously added to script section-->
+		<!-- added allergy percent and cold percent variable-->
 	</div>
 </div>	
 
