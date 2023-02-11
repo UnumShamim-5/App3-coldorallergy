@@ -38,7 +38,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <script>
         var allergy_count = 0;
         var cold_count = 0;
-	var resultText = document.getElementById("results");
+	
  
 
         function allergyAdd(){
@@ -50,7 +50,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         function coldAdd(){
             cold_count = cold_count + 1;
         }
-
+var resultText = document.getElementById("results");
   </script>
 
 
@@ -100,7 +100,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         <p>Are your eyes watery or itchy?</p>   
     	<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
         <a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
- </div><!-- adding page two and q2 with by copying code and adjusting (switching yes and no) -->
+ </div><!-- adding page two and q2 with by copying code (from page one) and adjusting (switching yes and no) -->
 
 <div class="page" id="two">
 	<div id="header" class="w3-container w3-flat-carrot">
@@ -112,6 +112,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
         <a href="#three"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
  </div><!-- copying code from page 2 and q2 and switching names and content (actions the same) -->
+	<!-- changed id from two to three and #three to #four -->
 	
 <div class="page" id="three">
 	<div id="header" class="w3-container w3-flat-carrot">
@@ -123,7 +124,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
         <a href="#four"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
  </div><!-- copying code from page 1 and q1 and changing names and content (actions the same) -->
-	
+	<!-- changed id from one to four and #two to #five-->
 <div class="page" id="four">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 4</h1>
@@ -148,6 +149,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <!-- inserted code above in the functions element to see if acheived result- with innertext replacement html down here-->
 <!-- removed them and placed document script by p id like in example -->
 <!--attempting to recapture the content of the paragraph in the results function (added it to the scripts by function)-->
+		<!--moved var to capture code afte the function as a form of trouble shooting  --> 
 	</div>
 </div>	
 
