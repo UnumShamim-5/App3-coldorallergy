@@ -38,10 +38,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <script>
         var allergy_count = 0;
         var cold_count = 0;
-	var total_count = cold_count + allergy_count 
- 	var allergyPercent = (allergy_count/total_count) * 100;
-	var coldPercent = (cold_count/total_count) * 100;
-	var resultText = document.getElementById("Results");
+
 	
         function allergyAdd(){
             allergy_count = allergy_count + 1;
@@ -50,6 +47,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
         function coldAdd(){
             cold_count = cold_count + 1;
+	}
+	
+	function getResults(){
+		var total_count = cold_count + allergy_count 
+ 		var allergyPercent = (allergy_count/total_count) * 100;
+		var coldPercent = (cold_count/total_count) * 100;
+		var resultText = document.getElementById("Results");
+		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;
 	}
 
   </script>
@@ -135,18 +140,36 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         <p>Are your symptoms seasonal or chronic?</p>   
     	<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
         <a href="#five"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
- </div><!-- creating a page five for results page- adding header and content -->
-	
+ </div><!-- creating a page five copy and pasted code for page three -->
+
 <div class="page" id="five">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Question 5</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+	<p>Question?</p>
+	<a href="#six"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
+        <a href="#six"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
+ </div>
+<div class="page" id="six">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Question 6</h1>
+	</div>
+	
+    	<div id="content" class="w3-container">
+        <p>Question?</p>   
+    	<a href="#seven"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
+        <a href="#seven"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+ </div>
+<div class="page" id="seven">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
 	</div>
 	
 	<div id="content" class="w3-container">
 		<p id="results"></p>
-		<script> 
-		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 
-		</script>
+
 <!-- inserted code above in the functions element to see if acheived result- with innertext replacement html down here-->
 <!-- removed them and placed document script by p id like in example -->
 <!--attempting to recapture the content of the paragraph in the results function (added it to the scripts by function)-->
@@ -156,6 +179,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<!-- added total count variable, deleted code preciously added to script section-->
 		<!-- added allergy percent and cold percent variable-->
 		<!-- forgot to add *100 to percentages so had to go back and add--> 
+		<!-- added parenthesis to and semicolon to javascript-->
+		<!-- went back and added two questions more-->
 	</div>
 </div>	
 
