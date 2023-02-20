@@ -107,9 +107,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         <p>Are your eyes watery or itchy?</p>   
     	<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
         <a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
- </div>
+ 	</div>
 	<!-- adding page two and q2 with by copying code (from page one) and adjusting (switching yes and no) -->
-
+</div>
 <div class="page" id="two">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
@@ -119,7 +119,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<p>Do you have a fever?</p>
 	<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
         <a href="#three"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
- </div>
+	 </div>
 	<!-- copying code from page 2 and q2 and switching names and content (actions the same) -->
 	<!-- changed id from two to three and #three to #four -->
 	
@@ -133,13 +133,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<p>Do you have a sore throat?</p>
 	<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
         <a href="#four"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
- </div>
-	<!-- copying code from page 1 and q1 and changing names and content (actions the same) -->
+	
+	
+	</div><!-- copying code from page 1 and q1 and changing names and content (actions the same) -->
 	<!-- changed id from one to four and #two to #five-->
-	<div class="page" id="seven">
-	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Results</h1>
-	</div>
 	
 </div>
 <div class="page" id="four">
@@ -151,8 +148,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         <p>Are your symptoms seasonal or chronic?</p>   
     	<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
         <a href="#five"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
- </div>
-	</div>
+ 	</div>
+</div>
 	<!-- creating a page five copy and pasted code for page three -->
 
 <div class="page" id="five">
@@ -164,8 +161,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<p>Do you have body aches?</p>
 	<a href="#six"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
         <a href="#six"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
- </div>
-	</div>
+ 	</div>
+</div>
 <div class="page" id="six">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 6</h1>
@@ -175,8 +172,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         <p>Do you have hives??</p>   
     	<a href="#seven"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
         <a href="#seven"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
- </div>
-	</div>
+ 	</div>
+</div>
 <div class="page" id="seven">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Get Results</h1>
@@ -184,8 +181,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<p id="Results"></p>
-		<a onlick="getResults();" class="w3-btn w3-black"> Get Results</a>
+		<button type="button" onClick="getResults()">Button</button>
 </div>
+	</div>
 <!-- inserted code above in the functions element to see if acheived result- with innertext replacement html down here-->
 <!-- removed them and placed document script by p id like in example -->
 <!--attempting to recapture the content of the paragraph in the results function (added it to the scripts by function)-->
@@ -205,6 +203,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<!-- got rid of total count-->
 		<!-- attempted to add get results button--> 
 	<!-- added more end div, delete href--> 
+	<!-- changed results button and added page ends-->
 	</div>
 </div>	
 
